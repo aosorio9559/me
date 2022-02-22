@@ -18,7 +18,6 @@ export const Section = styled.section`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
-
     width: calc(100vw - 32px);
     flex-direction: column;
   }
@@ -90,7 +89,7 @@ export const SectionDivider = styled.div`
       ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
       : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
 
-  margin: ${(props) => (props.divider ? "4rem 0" : "")};
+  margin-bottom: ${(props) => (props.divider ? "5rem" : "")};
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 48px;
@@ -100,5 +99,6 @@ export const SectionDivider = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 32px;
     height: 2px;
+    margin: ${(props) => (props.divider ? "15rem 0 5rem 0" : "")};
   }
 `;
