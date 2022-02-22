@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
+import { DiCode } from "react-icons/di";
 import {
   Container,
   Div1,
@@ -21,10 +21,10 @@ export const Header = () => (
             display: "flex",
             alignItems: "center",
             color: "white",
-            marginBottom: "20px",
+            // marginBottom: "20px",
           }}
         >
-          <DiCssdeck size="3rem" />
+          <DiCode size="3rem" />
           <Span>Alejandro Osorio</Span>
         </a>
       </Link>
@@ -38,11 +38,6 @@ export const Header = () => (
       <li>
         <Link href="#tech">
           <NavLink>Technologies</NavLink>
-        </Link>
-      </li>
-      <li>
-        <Link href="#about">
-          <NavLink>About</NavLink>
         </Link>
       </li>
     </Div2>
