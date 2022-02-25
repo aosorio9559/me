@@ -19,6 +19,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="shortcut icon" href={`${pathPrefix}/favicon.ico`} />
+          <title>Alejandro Osorio Díaz - Software developer</title>
         </Head>
         <body>
           <Main />
