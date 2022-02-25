@@ -29,10 +29,10 @@ jobs:
     - run: npm ci
     - run: npm run build
       env:
-        NEXT_PUBLIC_BASE_PATH: /personal-portfolio
+        NEXT_PUBLIC_BASE_PATH: /me
     - run: npm run export
       env:
-        NEXT_PUBLIC_BASE_PATH: /personal-portfolio
+        NEXT_PUBLIC_BASE_PATH: /me
     - run: touch ./out/.nojekyll
 
     - name: Deploy 🚀
